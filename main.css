@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body > header {
+    background-color: red;
+    padding: 16px 0;
+    color: white;
+}
+/*estilizando diretamente do filho ao pai, header é uma tag genérica, então usa > para direcionar o header*/
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*deixar todos os container no display flex, alinhado, align itens usado para centralizar os itens e justify content para por espaço entre ele e o título header*/
+
+header li {
+    display: inline;
+    
+}
+
+header li a{
+    color: white;   
+    text-decoration: none;
+    justify-content: space-between;
+    margin-left: 16px;
+}
+header li a:hover{
+    text-decoration: underline;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+/* CENTRALIZANDO O CABEÇALHO - CONTEÚDO DOS ESPORTES*/
+
+.artigos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* flex-wrap criando uma linha na vertical*/
+/* justify content: space between é usado para preencher igualmente os espaços vagos*/ 
+
+.artigos article img{
+    height: 180px;
+    width: 390px;
+    height: 200px;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+}
+/*estilizando todos os article com a div articles*/
+
+.articles article img {
+    width: 100%;
+}
+/* definindo a altura máxima de todas as imagens dessa div articles sendo a largura se adequando pelo uso do box-sizing: border box*/
+
+.articles article {
+    width: 30%;
+}
+
+.artigos article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles  article,
+.artigos {
+    margin-bottom: 16px;
+}
+/*alterando as margens dos títulos das seções*/
+
+.articles,
+.artigos h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+/*alterando as margens dos títulos das notícias*/
+
+.articles article a,
+.artigos article a {
+    background-color: blue;
+    color: white;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 8px;
+}
+/*estilizando os botões de links, esse display inline-block faz com que o botão não invada o espaço do texto, text decoration estilizando e tirando a linha de baixo do texto do botão*/
+
+.articles article a:hover,
+.artigos article a:hover{
+    text-decoration: underline;
+}
+/*estado do elemento usa o hover, onde irá mudar o estilo quando passar o mouse por cima do elemento*/
+
+.articles article p,
+.artigos article p,
+.articles article a,
+.artigos article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3,
+.artigos article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 38px;
+}
+
+#sports {
+    background-color: aqua;
+}
+#sports .articles article a {
+    background-color: teal;
+}
+#economy {
+    background-color: gold;
+}
+#economy .articles article a{
+    background-color: chocolate;
+}
+#entretenimento {
+    background-color: red;
+}
+#entretenimento .artigos article a{
+    background-color: blue;
+}
+#tecnologia {
+    background-color: violet;
+}
+#tecnologia .artigos article a {
+    background-color: rgb(162, 0, 255);
+}
+#entretenimento {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
